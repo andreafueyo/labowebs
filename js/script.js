@@ -13,6 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
             valid = false;
         }
 
+        if (mensaje.value.trim() === "") {
+            alert("Por favor, ingrese un mensaje.");
+            valid = false;
+            }
+
         if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email.value)) {
             alert("Por favor, ingrese un correo electrónico válido.");
             valid = false;
